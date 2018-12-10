@@ -1,0 +1,58 @@
+Maven:
+	- Estrutura do projeto
+	- Gerenciador de dependências
+	- Build
+
+- Criar um projeto Mave
+Copiar junit do Maven Repository
+
+JPA
+- Entidade
+- Entity manager
+	- transaçoes
+	- salvar entidades
+	- criar banco
+- Entity manager factory (fabrica)
+- Percistense XML
+
+Mapear entidade 
+
+Transformar classe em entidade
+@entity antes do public class
+
+Não ser nulo: nullable
+
+Comprimento: length
+
+Local date 
+
+Para adicionar um enum (quando tem tipos limitados em outra classe enum)
+@javax.persistence.Enumerated(EnumType.STRING)
+	@Column(name="tipoLogradouro", length = 10, nullable = false)
+	private TipoLogradouro tipoLogradouro;
+
+Para adicionar outra coluna (quando precisa de informaçoes de outra classe)
+@ManyToOne
+@JoinColumn(name="cidade_id", referencedColumnName = "id", nullable = false)
+private Cidade cidade;
+
+Banco de dados: Postgree
+
+Terminal Toolbox - acessa o Postgree sem precisar instalar 
+
+Outro repositório: docker hub
+
+Para inserir no banco de dados usar o encapsulamento na aba de teste
+- tem que fazer um construtor pacote
+- construir uma entidade no teste
+
+Exemplo entidade:
+EntityManagerFactory efm = Persistence.createEntityManagerFactory("db1start");
+		EntityManager em = efm.createEntityManager();
+
+		em.getTransaction().begin();
+		
+		em.persist(cidade);
+		
+		em.getTransaction().commit();
+		em.close();
