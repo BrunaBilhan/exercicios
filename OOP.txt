@@ -1,0 +1,49 @@
+Metodologi ágil
+- Scrum
+- Kanban
+- XP
+
+Métod em cascata:
+interativo e incremental 
+
+O que foi aprendido essa seman?
+ Junit
+@teste/assertEquals
+Classes
+Instância
+Package 
+CamelCase
+
+SourcePackage main test
+
+Pesquisar sobre
+Primitivo 
+Objetos
+
+Encapsulamento
+
+No eclipse
+Criar projeto
+depois cria folder
+depois cria pacote
+depois cria classe 
+
+Criar classe como privado, para depis 
+
+No teste
+@Test tem que dar o import
+public void 
+
+depois que colocar o teste e colocar o Assert também tem que importar
+
+
+Quando usa this. é para se refeir ao atributo
+
+Gerar métodos automáticos
+Ctrl 3 
+Digita Generate
+Selecionar Getters and Setters
+
+
+ 
+
